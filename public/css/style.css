@@ -1,0 +1,621 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  flex:1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.f-info-links a{
+  text-decoration: none;
+  color:#222222;
+}
+
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info{
+  text-align: center;
+  height:8rem;
+  background-color: #ebebeb;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+  border:none !important;
+  margin-bottom:2rem;
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width:100% !important;
+  object-fit:cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p{
+  font-weight:400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+  opacity:0;
+}
+
+.card-img-overlay:hover{
+  opacity:0.2;
+  background-color: white;
+}
+
+/* New Page */
+.add-btn{
+  background-color: #fe424d !important;
+  border:none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+  background-color: #fe424d !important;
+  border:none !important;
+}
+
+/* Show Page */
+.show-img{
+  height:30vh;
+}
+
+.btns{
+  display:flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right:0;
+}
+
+/* Map */
+#map {
+  height: 400px;
+  width : 80vh;
+}
+
+/* -------------Navbar---------------- */
+  .wl-navbar {
+    min-height: 85px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 10;
+  }
+
+  .wl-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff385c;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .brand-icon {
+    font-size: 30px;
+  }
+
+  .wl-categories {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .category {
+    text-decoration: none;
+    color: #717171;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+  }
+
+  .category span {
+    font-size: 25px;
+  }
+
+  .category small {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .category:hover,
+  .category.active {
+    color: #222;
+    border-bottom-color: #222;
+  }
+
+  .wl-user-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+  }
+
+  .host-link {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .host-link:hover {
+    background: #f7f7f7;
+    border-radius: 25px;
+  }
+
+  .signup-btn,
+  .login-btn {
+    padding: 11px 17px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    background: white;
+    color: #222;
+    cursor: pointer;
+  }
+
+  .signup-btn {
+    background: #ff385c;
+    color: white;
+    border-color: #ff385c;
+  }
+
+  .signup-btn:hover {
+    background: #e31c5f;
+    color: white;
+  }
+
+  .login-btn:hover {
+    background: #f7f7f7;
+  }
+
+  .wl-user-nav form {
+    margin: 0;
+  }
+
+  .user-greeting {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* Search Bar */
+
+  .wl-search-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 25px 15px;
+    background: #fff;
+  }
+
+  .wl-search-bar {
+    width: min(850px, 100%);
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 8px 25px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    background: white;
+  }
+
+  .search-section {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 12px;
+  }
+
+  .search-section label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+  }
+
+  .search-section input,
+  .search-section select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #717171;
+    font-size: 12px;
+    min-width: 0;
+  }
+
+  .search-divider {
+    height: 35px;
+    width: 1px;
+    background: #ddd;
+  }
+
+  .search-btn {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: #ff385c;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .search-btn:hover {
+    background: #e31c5f;
+  }
+
+  #wl-menu-toggle,
+  .wl-menu-btn {
+    display: none;
+  }
+  
+/* =================================
+   WANDERLUST NAVBAR - FIXED LAYOUT
+================================= */
+
+.wl-navbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 5%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    position: relative;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+/* Brand */
+
+.wl-brand {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ff385c;
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Navigation Categories */
+
+#filters {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 35px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+#filters .filter {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 5px;
+    min-width: 65px;
+    opacity: 0.7;
+    border-bottom: 2px solid transparent;
+}
+
+#filters .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 2px solid #222;
+}
+
+#filters .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #717171;
+}
+
+#filters .nav-link i {
+    font-size: 22px;
+}
+
+#filters .nav-link p {
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Right Side Buttons */
+
+.wl-user-nav {
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.host-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.signup-btn {
+    padding: 12px 18px;
+    background: #ff385c;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.login-btn {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wl-user-nav form {
+    margin: 0;
+}
+
+/* Mobile Menu */
+
+#wl-menu-toggle,
+.wl-menu-btn {
+    display: none;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 850px) {
+
+    .wl-navbar {
+        grid-template-columns: 1fr auto;
+        gap: 15px;
+    }
+
+    #filters {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+        flex-direction: row !important;
+    }
+
+    .wl-user-nav {
+        grid-column: 2;
+        grid-row: 1;
+        gap: 10px;
+    }
+
+    .host-link {
+        display: none;
+    }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 550px) {
+
+    .wl-navbar {
+        grid-template-columns: 1fr auto;
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    .wl-brand {
+        font-size: 21px;
+    }
+
+    .wl-menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        justify-self: end;
+    }
+
+    .wl-user-nav {
+        display: none;
+        grid-column: 1 / -1;
+        grid-row: 3;
+        justify-self: center;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #wl-menu-toggle:checked ~ .wl-user-nav {
+        display: flex;
+    }
+
+    #filters {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        gap: 12px;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    #filters .filter {
+        min-width: 0;
+        padding: 8px 3px;
+    }
+
+    #filters .nav-link p {
+        font-size: 11px;
+    }
+
+    #filters .nav-link i {
+        font-size: 19px;
+    }
+}
+
+
+
+.wl-search-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wl-search-bar {
+  width: 90%;
+  max-width: 1060px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 3px 12px #00000015;
+}
+
+.search-item {
+  flex: 1;
+  padding: 5px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-item label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-item input,
+.search-item select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #717171;
+  width: 100%;
+}
+
+.divider {
+  height: 40px;
+  border-left: 1px solid #ddd;
+}
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #ff385c;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-btn:hover {
+  background: #e31c5f;
+}
+
+@media(max-width: 600px) {
+  .wl-search-bar {
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .search-item {
+    padding: 5px;
+  }
+
+  .search-item label {
+    font-size: 12px;
+  }
+
+  .search-item input,
+  .search-item select {
+    font-size: 11px;
+  }
+
+  .search-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
